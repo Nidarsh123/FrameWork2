@@ -23,6 +23,7 @@ public class EmptyBrowser1 {
 		WebElement element = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).perform();
+		Thread.sleep(2000);
 	
 		driver.findElement(By.xpath("//a[text()='Sign Out']")).click();
 		//updated successfully
